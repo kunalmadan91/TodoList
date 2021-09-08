@@ -68,4 +68,17 @@ dependencies {
     testImplementation "junit:junit:$junit_version"
     androidTestImplementation "androidx.test.ext:junit:$test_ext_runner_version"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+
+    //Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version"
+
+    //viewModel Scope
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$ktx_extensions"
+
+    //lifecycle scope
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$ktx_extensions"
+
+    //livedata
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$ktx_extensions"
+
 }

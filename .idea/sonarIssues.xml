@@ -8,7 +8,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Desktop/TrainingPlan/Retrofit-Kotlin-Coroutines-Example-master/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/TrainingPlan/Retrofit-Kotlin-Coroutines-Example-master/app/src/main/java/com/mindorks/retrofit/coroutines/ui/main/viewmodel/MainViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/learning/todolist/di/component/ActivityComponent.java">
           <value>
             <set />
           </value>
@@ -28,12 +43,47 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/data/remote/Endpoint.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/data/remote/NetworkService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/data/remote/Networking.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/data/repository/MainRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/di/Scopes.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/di/component/ActivityComponent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/di/component/ApplicationComponent.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/di/module/ApplicationModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/di/module/TodoModule.kt">
           <value>
             <set />
           </value>
@@ -49,6 +99,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/ui/todo/TodoListViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/utils/ViewModelProviderFactory.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/utils/common/Resource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/utils/common/Status.kt">
           <value>
             <set />
           </value>
@@ -74,6 +139,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../Mindorks/mindorks-bootcamp-instagram-mvvm-base-project-login/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Mindorks/mindorks-bootcamp-instagram-mvvm-base-project-login/app/src/main/java/com/mindorks/bootcamp/instagram/data/remote/Networking.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Mindorks/mindorks-bootcamp-instagram-mvvm-base-project-login/app/src/main/java/com/mindorks/bootcamp/instagram/utils/ViewModelProviderFactory.kt">
           <value>
             <set />
           </value>
