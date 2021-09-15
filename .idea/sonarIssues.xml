@@ -13,6 +13,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Desktop/TrainingPlan/Retrofit-Kotlin-Coroutines-Example-master/app/src/main/java/com/mindorks/retrofit/coroutines/ui/main/view/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Desktop/TrainingPlan/Retrofit-Kotlin-Coroutines-Example-master/app/src/main/java/com/mindorks/retrofit/coroutines/ui/main/viewmodel/MainViewModel.kt">
           <value>
             <set />
@@ -24,6 +29,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/learning/todolist/di/component/ActivityComponent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/learning/todolist/di/component/TodoComponent.java">
           <value>
             <set />
           </value>
@@ -78,6 +88,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/di/component/TodoComponent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/di/module/ApplicationModule.kt">
           <value>
             <set />
@@ -88,7 +103,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/di/qualifiers.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/ui/todo/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/learning/todolist/ui/todo/MainAdapter.kt">
           <value>
             <set />
           </value>
@@ -129,6 +154,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/item_list.xml">
           <value>
             <set />
           </value>

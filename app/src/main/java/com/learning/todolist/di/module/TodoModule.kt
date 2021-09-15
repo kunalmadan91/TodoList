@@ -11,9 +11,8 @@ import dagger.Provides
 @Module
 class TodoModule(private val activity: TodoListActivity) {
 
-
     @Provides
-    fun provideTodoListViewModel(mainRepository: MainRepository) =
+    fun provideTodoListViewModel(mainRepository: MainRepository): TodoListViewModel =
          ViewModelProviders.of(
             activity, ViewModelProviderFactory(TodoListViewModel::class) {
                 TodoListViewModel(mainRepository)

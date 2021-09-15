@@ -9,6 +9,6 @@ interface NetworkService {
 
 
     @GET(Endpoint.TODOS)
-    fun doNetworkCall() : List<TodoModel>
+    suspend fun doNetworkCall() : List<TodoModel>
 
 }

@@ -2,10 +2,20 @@ package com.learning.todolist.ui.todo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.Toast
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.learning.todolist.R
 import com.learning.todolist.TodoListApplication
-import com.learning.todolist.di.component.DaggerActivityComponent
+import com.learning.todolist.data.model.TodoModel
+import com.learning.todolist.data.remote.NetworkService
+import com.learning.todolist.databinding.ActivityMainBinding
+import com.learning.todolist.di.component.DaggerTodoComponent
 import com.learning.todolist.di.module.TodoModule
+import com.learning.todolist.utils.common.Status
+import timber.log.Timber
 import javax.inject.Inject
 
 class TodoListActivity : AppCompatActivity() {
@@ -13,28 +23,74 @@ class TodoListActivity : AppCompatActivity() {
     @Inject
     lateinit var viewModel: TodoListViewModel
 
+    private lateinit var binding: ActivityMainBinding
+
+    private lateinit var adapter: MainAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
         injectDependencies();
+        setupUI();
+        setupObservers();
+    }
 
-        viewModel.makeNetworkCall()
+    private fun setupUI() {
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
+        adapter = MainAdapter(arrayListOf())
+        binding.recyclerView.addItemDecoration(
+            DividerItemDecoration(
+                binding.recyclerView.context,
+                ( binding.recyclerView.layoutManager as LinearLayoutManager).orientation
+            )
+        )
+        binding.recyclerView.adapter = adapter
+    }
 
-
+    private fun setupObservers() {
         viewModel.makeNetworkCall().observe(this,
             {
-                it?.let {
-
+                it?.let { resource ->
+                    when (resource.status) {
+                        Status.SUCCESS -> {
+                            Timber.d("response" + resource.data)
+                            binding.recyclerView.visibility = View.VISIBLE
+                            binding.progressBar.visibility = View.GONE
+                            resource.data?.let { items -> retrieveList(items) }
+                        }
+                        Status.ERROR -> {
+                            Timber.d("error" + resource.data)
+                            binding.recyclerView.visibility = View.VISIBLE
+                            binding.progressBar.visibility = View.GONE
+                            Toast.makeText(this, it.message, Toast.LENGTH_LONG).show()
+                        }
+                        Status.LOADING -> {
+                            Timber.d("loading" + resource.data)
+                            binding.progressBar.visibility = View.VISIBLE
+                            binding.recyclerView.visibility = View.GONE
+                        }
+                    }
                 }
             }
         )
     }
 
+    private fun retrieveList(items: List<TodoModel>) {
+        adapter.apply {
+            addList(items)
+            notifyDataSetChanged()
+        }
+    }
+
     private fun injectDependencies() {
-        DaggerActivityComponent
+        DaggerTodoComponent
             .builder()
             .applicationComponent((application as TodoListApplication).applicationComponent)
             .todoModule(TodoModule(this))
             .build()
+            .inject(this)
     }
 }
