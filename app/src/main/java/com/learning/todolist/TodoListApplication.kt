@@ -20,8 +20,6 @@ class TodoListApplication: Application() {
     override fun onCreate() {
         super.onCreate()
         injectDependencies()
-
-        Timber.d("dataaa"+ networkService)
     }
 
     private fun injectDependencies() {

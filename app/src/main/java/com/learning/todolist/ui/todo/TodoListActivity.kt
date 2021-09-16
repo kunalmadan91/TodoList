@@ -15,6 +15,7 @@ import com.learning.todolist.databinding.ActivityMainBinding
 import com.learning.todolist.di.component.DaggerTodoComponent
 import com.learning.todolist.di.module.TodoModule
 import com.learning.todolist.utils.common.Status
+import com.learning.todolist.utils.display.Toaster
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -48,6 +49,10 @@ class TodoListActivity : AppCompatActivity() {
             )
         )
         binding.recyclerView.adapter = adapter
+
+        binding.textViewReload.setOnClickListener {
+            setupObservers()
+        }
     }
 
     private fun setupObservers() {
@@ -59,18 +64,21 @@ class TodoListActivity : AppCompatActivity() {
                             Timber.d("response" + resource.data)
                             binding.recyclerView.visibility = View.VISIBLE
                             binding.progressBar.visibility = View.GONE
+                            binding.rlerror.visibility = View.GONE
                             resource.data?.let { items -> retrieveList(items) }
                         }
                         Status.ERROR -> {
                             Timber.d("error" + resource.data)
                             binding.recyclerView.visibility = View.VISIBLE
                             binding.progressBar.visibility = View.GONE
+                            binding.rlerror.visibility = View.VISIBLE
                             Toast.makeText(this, it.message, Toast.LENGTH_LONG).show()
                         }
                         Status.LOADING -> {
                             Timber.d("loading" + resource.data)
                             binding.progressBar.visibility = View.VISIBLE
                             binding.recyclerView.visibility = View.GONE
+                            binding.rlerror.visibility = View.GONE
                         }
                     }
                 }
