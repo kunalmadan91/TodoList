@@ -23,7 +23,6 @@ class MainAdapter(private val list: ArrayList<TodoModel>): RecyclerView.Adapter<
 
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
         val item = list.get(position)
-       // holder.itemBinding.
         holder.bind(item)
     }
 
@@ -32,7 +31,7 @@ class MainAdapter(private val list: ArrayList<TodoModel>): RecyclerView.Adapter<
     }
 
     fun addList(items: List<TodoModel>) {
-        this.list.apply {
+        this.list.run {
             clear()
             addAll(items)
         }

@@ -168,6 +168,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../Mindorks/android-base-classes-demo-project-with-lifecycle-aware-adapter/app/src/main/java/com/mindorks/bootcamp/demo/data/local/DatabaseService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Mindorks/android-base-classes-demo-project-with-lifecycle-aware-adapter/app/src/main/java/com/mindorks/bootcamp/demo/ui/base/BaseItemViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../Mindorks/mindorks-bootcamp-instagram-mvvm-base-project-login/app/build.gradle">
           <value>
             <set />

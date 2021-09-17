@@ -72,13 +72,18 @@ class TodoListActivity : AppCompatActivity() {
                             binding.recyclerView.visibility = View.VISIBLE
                             binding.progressBar.visibility = View.GONE
                             binding.rlerror.visibility = View.VISIBLE
-                            Toast.makeText(this, it.message, Toast.LENGTH_LONG).show()
                         }
                         Status.LOADING -> {
                             Timber.d("loading" + resource.data)
                             binding.progressBar.visibility = View.VISIBLE
                             binding.recyclerView.visibility = View.GONE
                             binding.rlerror.visibility = View.GONE
+                        }
+                        Status.UNKNOWN -> {
+                            Timber.d("unknown error" + resource.data)
+                            binding.recyclerView.visibility = View.VISIBLE
+                            binding.progressBar.visibility = View.GONE
+                            binding.rlerror.visibility = View.VISIBLE
                         }
                     }
                 }
