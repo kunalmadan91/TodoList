@@ -7,6 +7,7 @@ import com.learning.todolist.data.remote.NetworkService
 import com.learning.todolist.data.repository.MainRepository
 import com.learning.todolist.di.ApplicationContext
 import com.learning.todolist.di.module.ApplicationModule
+import com.learning.todolist.utils.network.NetworkHelper
 import dagger.Component
 import javax.inject.Singleton
 
@@ -18,6 +19,7 @@ interface ApplicationComponent {
 
     fun getNetworkService(): NetworkService
 
+    fun getNetworkHelper(): NetworkHelper
 
     fun getMainRepository(): MainRepository
 

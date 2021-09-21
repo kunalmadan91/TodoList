@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Desktop/TrainingPlan/Retrofit-Kotlin-Coroutines-Example-master/app/build.gradle">
           <value>
             <set />
@@ -19,6 +24,41 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/Desktop/TrainingPlan/Retrofit-Kotlin-Coroutines-Example-master/app/src/main/java/com/mindorks/retrofit/coroutines/ui/main/viewmodel/MainViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/learn/android-testing-end_codelab_1/app/src/test/java/com/example/android/architecture/blueprints/todoapp/LiveDataTestUtil.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/learn/android-testing-end_codelab_1/app/src/test/java/com/example/android/architecture/blueprints/todoapp/tasks/TasksViewModelTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/learn/android-testing-starter_code/app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/learn/android-testing-starter_code/app/src/test/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtilsTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/learn1/Dagger2Recipes-UserScope-master/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/learn1/Dagger2Recipes-UserScope-master/gradle/wrapper/gradle-wrapper.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/learn1/GithubClient-master/gradle/wrapper/gradle-wrapper.properties">
           <value>
             <set />
           </value>
@@ -178,6 +218,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../Mindorks/android-lifecycle-demo-project-livedata-viewmodel/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Mindorks/android-lifecycle-demo-project-livedata-viewmodel/app/src/main/java/com/mindorks/bootcamp/demo/lifecycle/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../Mindorks/mindorks-bootcamp-instagram-mvvm-base-project-login/app/build.gradle">
           <value>
             <set />
@@ -193,7 +243,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../Mindorks/mindorks-bootcamp-instagram-mvvm-base-project-login/app/src/test/java/com/mindorks/bootcamp/instagram/utils/common/ValidatorTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../Mindorks/mindorks-bootcamp-instagram-mvvm-base-project-login/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../ShoppersStop_new/ShoppersStop/app/src/main/java/com/shoppersstop/apps/utils/pdpviewpageranimation/SliderLayout.java">
           <value>
             <set />
           </value>

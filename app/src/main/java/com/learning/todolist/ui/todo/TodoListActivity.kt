@@ -2,20 +2,17 @@ package com.learning.todolist.ui.todo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.learning.todolist.R
 import com.learning.todolist.TodoListApplication
 import com.learning.todolist.data.model.TodoModel
-import com.learning.todolist.data.remote.NetworkService
 import com.learning.todolist.databinding.ActivityMainBinding
 import com.learning.todolist.di.component.DaggerTodoComponent
 import com.learning.todolist.di.module.TodoModule
 import com.learning.todolist.utils.common.Status
-import com.learning.todolist.utils.display.Toaster
+import com.learning.todolist.utils.network.NetworkHelper
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -23,6 +20,9 @@ class TodoListActivity : AppCompatActivity() {
 
     @Inject
     lateinit var viewModel: TodoListViewModel
+
+    @Inject
+    lateinit var  networkHelper: NetworkHelper
 
     private lateinit var binding: ActivityMainBinding
 
@@ -35,6 +35,10 @@ class TodoListActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         injectDependencies();
+        if(!networkHelper.isNetworkConnected())  {
+            Toast.makeText(this, "No internet connection", Toast.LENGTH_LONG).show()
+            return
+        }
         setupUI();
         setupObservers();
     }
